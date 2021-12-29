@@ -1,0 +1,30 @@
+{
+  "name": "html-video-recorder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "esbuild src/index.js --bundle --minify --outfile=dist/bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theipster/html-video-recorder.git"
+  },
+  "keywords": [
+    "html",
+    "video",
+    "media",
+    "record",
+    "webm"
+  ],
+  "author": "Alan Ip",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/theipster/html-video-recorder/issues"
+  },
+  "homepage": "https://github.com/theipster/html-video-recorder#readme",
+  "dependencies": {
+    "esbuild": "^0.14.9"
+  }
+}
