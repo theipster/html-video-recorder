@@ -1,6 +1,6 @@
 import { concat as concatBlobs } from "./blob.js";
 import { record } from "./recorder.js";
-import { fixWebmBlob } from "./webm.js";
+import fixWebmMetaInfo from "@w-xuefeng/fix-webm-metainfo";
 
 // https://nickdesaulniers.github.io/netfix/demo/bufferAll.html
 // https://raw.githubusercontent.com/yusitnikov/fix-webm-duration/master/fix-webm-duration.js
@@ -10,7 +10,7 @@ import { fixWebmBlob } from "./webm.js";
 (function (video) {
   record(video)
     .then(concatBlobs)
-    .then(fixWebmBlob)
+    .then(fixWebmMetaInfo)
     .then(URL.createObjectURL)
     .then(console.log);
 })(
