@@ -17,12 +17,3 @@ export async function createRecorderFor(media) {
     recorder.onstop = event => resolve(buffer);
   });
 }
-
-export async function record(media, rewind = true) {
-  if (rewind) {
-    media.currentTime = 0;
-  }
-  const recorder = createRecorderFor(media);
-  media.play();
-  return recorder;
-}
