@@ -26,6 +26,6 @@
   "homepage": "https://github.com/theipster/html-video-recorder#readme",
   "dependencies": {
     "@w-xuefeng/fix-webm-metainfo": "^1.0.7",
-    "esbuild": "^0.14.9"
+    "esbuild": "^0.25.0"
   }
 }
